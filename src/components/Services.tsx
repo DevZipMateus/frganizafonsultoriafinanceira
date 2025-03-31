@@ -3,21 +3,19 @@ import React from 'react';
 
 const Services = () => {
   return (
-    <section id="services" className="w-full py-12 md:py-24 lg:py-32 bg-organiza-dark">
+    <section id="services" className="w-full py-10 md:py-16 lg:py-20 bg-organiza-dark">
       <div className="container px-4 md:px-6">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-organiza-light">
-              Nossos Serviços
-            </h2>
-            <p className="mx-auto max-w-[700px] text-organiza-light/80 md:text-xl">
-              Soluções completas para organizar e otimizar suas finanças
-            </p>
-          </div>
+        <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8">
+          <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl text-organiza-light">
+            Nossos Serviços
+          </h2>
+          <p className="mx-auto max-w-[700px] text-organiza-light/80 md:text-lg">
+            Soluções completas para organizar e otimizar suas finanças
+          </p>
         </div>
-        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 lg:gap-10 pt-10">
-          <div className="flex flex-col items-center space-y-4 rounded-lg border border-organiza-highlight p-6 shadow-md">
-            <div className="rounded-full bg-organiza-accent p-4">
+        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 lg:gap-8">
+          <div className="flex flex-col space-y-3 rounded-lg border border-organiza-highlight p-5 shadow-md transition-transform hover:scale-[1.02]">
+            <div className="rounded-full bg-organiza-accent p-3 w-12 h-12 flex items-center justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -36,13 +34,13 @@ const Services = () => {
               </svg>
             </div>
             <h3 className="text-xl font-bold text-organiza-light">BPO Financeiro</h3>
-            <p className="text-center text-organiza-light/80">
+            <p className="text-organiza-light/80">
               Terceirização da gestão financeira com profissionais qualificados, garantindo controle, 
               eficiência e redução de custos para sua empresa.
             </p>
           </div>
-          <div className="flex flex-col items-center space-y-4 rounded-lg border border-organiza-highlight p-6 shadow-md">
-            <div className="rounded-full bg-organiza-accent p-4">
+          <div className="flex flex-col space-y-3 rounded-lg border border-organiza-highlight p-5 shadow-md transition-transform hover:scale-[1.02]">
+            <div className="rounded-full bg-organiza-accent p-3 w-12 h-12 flex items-center justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -60,7 +58,7 @@ const Services = () => {
               </svg>
             </div>
             <h3 className="text-xl font-bold text-organiza-light">Sistema de Gestão Financeira</h3>
-            <p className="text-center text-organiza-light/80">
+            <p className="text-organiza-light/80">
               Implementação de sistemas modernos para controle financeiro, com dashboards personalizados 
               e relatórios completos para tomada de decisões.
             </p>
