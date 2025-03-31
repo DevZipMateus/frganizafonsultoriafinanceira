@@ -20,10 +20,11 @@ export default {
     },
     extend: {
       colors: {
-        "organiza-dark": "#101a23",      // Cor principal (60%)
-        "organiza-accent": "#1c3046",    // Cor secundária (30%)
-        "organiza-highlight": "#2d4a67", // Cor de destaque (10%)
-        "organiza-light": "#e4e6e8",     // Cor clara para textos
+        "organiza-dark": "#101a23",      // Maintaining the dark color for text
+        "organiza-accent": "#1c3046",    // Maintaining accent color
+        "organiza-highlight": "#2d4a67", // Maintaining highlight color
+        "organiza-light": "#e4e6e8",     // Maintaining light color
+        "organiza-white": "#ffffff",     // Adding white color for backgrounds
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

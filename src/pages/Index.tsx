@@ -10,7 +10,7 @@ import EgestorERP from '../components/EgestorERP';
 
 const Index = () => {
   return (
-    <div className="flex flex-col min-h-screen bg-organiza-dark">
+    <div className="flex flex-col min-h-screen bg-white">
       <Hero />
       <AboutUs />
       <Services />
