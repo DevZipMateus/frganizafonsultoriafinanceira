@@ -1,7 +1,5 @@
-
 import React from 'react';
 import { Button } from './ui/button';
-
 const Hero = () => {
   return <section className="relative w-full py-10 md:py-16 lg:py-20 bg-organiza-dark text-organiza-white overflow-hidden">
       {/* Logo background */}
@@ -14,11 +12,7 @@ const Hero = () => {
         <div className="py-24 md:py-28 lg:py-32"></div>
         
         {/* Company slogan repositioned to the middle area */}
-        <div className="flex flex-col items-center text-center mb-16">
-          <p className="text-xl text-white font-semibold md:text-2xl py-0">
-            Seu financeiro organizado faz a diferença.
-          </p>
-        </div>
+        
       </div>
       
       {/* Position buttons at the bottom of the section, outside the image area */}
@@ -32,5 +26,4 @@ const Hero = () => {
       </div>
     </section>;
 };
-
 export default Hero;
