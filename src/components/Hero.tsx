@@ -9,13 +9,10 @@ const Hero = () => {
         <img src="/lovable-uploads/afd70b2b-77ad-4645-b491-61a8aa1a00dd.png" alt="Organiza Logo Background" className="w-full max-w-3xl object-contain" />
       </div>
       
-      <div className="container px-4 md:px-6 relative z-10 flex flex-col justify-center items-center h-full">
-        {/* Flex spacer to push content to the bottom */}
-        <div className="flex-grow"></div>
-        
-        {/* Company slogan positioned at the bottom, close to buttons */}
-        <div className="flex flex-col items-center text-center mb-6">
-          <p className="text-xl text-white font-semibold md:text-2xl">
+      <div className="container px-4 md:px-6 relative z-10">
+        {/* Company slogan positioned at the top */}
+        <div className="flex flex-col items-center text-center mb-16">
+          <p className="text-xl text-white font-semibold md:text-2xl mt-4">
             Seu financeiro organizado faz a diferença.
           </p>
         </div>
