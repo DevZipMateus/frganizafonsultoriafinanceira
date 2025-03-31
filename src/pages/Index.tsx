@@ -6,6 +6,7 @@ import Services from '../components/Services';
 import Team from '../components/Team';
 import Contact from '../components/Contact';
 import FloatingButton from '../components/FloatingButton';
+import EgestorERP from '../components/EgestorERP';
 
 const Index = () => {
   return (
@@ -14,6 +15,7 @@ const Index = () => {
       <AboutUs />
       <Services />
       <Team />
+      <EgestorERP />
       <Contact />
       <FloatingButton />
     </div>
