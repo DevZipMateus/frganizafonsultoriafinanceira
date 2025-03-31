@@ -1,10 +1,7 @@
-
 import React from 'react';
 import { Button } from './ui/button';
-
 const Hero = () => {
-  return (
-    <section className="relative w-full py-10 md:py-16 lg:py-20 bg-organiza-dark text-organiza-white overflow-hidden">
+  return <section className="relative w-full py-10 md:py-16 lg:py-20 bg-organiza-dark text-organiza-white overflow-hidden">
       {/* Logo background */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <img src="/lovable-uploads/afd70b2b-77ad-4645-b491-61a8aa1a00dd.png" alt="Organiza Logo Background" className="w-full max-w-3xl object-contain" />
@@ -15,17 +12,10 @@ const Hero = () => {
         <div className="py-12 md:py-16 lg:py-20"></div>
         
         {/* Company slogan positioned in the middle area */}
-        <div className="text-center mb-12 md:mb-16 lg:mb-20">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-organiza-white mb-4">
-            Seu financeiro organizado faz a diferença
-          </h1>
-          <p className="text-xl text-organiza-white/80">
-            Consultoria financeira especializada para empresas de pequeno e médio porte
-          </p>
-        </div>
+        
         
         {/* Additional spacing */}
-        <div className="py-8 md:py-10 lg:py-12"></div>
+        
       </div>
       
       {/* Position buttons at the bottom of the section, outside the image area */}
@@ -37,8 +27,6 @@ const Hero = () => {
           <a href="#services">Nossos Serviços</a>
         </Button>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
