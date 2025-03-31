@@ -1,130 +1,162 @@
 
 import React from 'react';
-import { Phone, Mail, MapPin } from 'lucide-react';
-import { useIsMobile } from '../hooks/use-mobile';
-import Map from './Map';
+import { Button } from './ui/button';
 
 const Contact = () => {
-  const isMobile = useIsMobile();
-  
   return (
-    <section id="contact" className="section bg-neutral-100">
-      <div className="container-custom">
-        {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-block bg-corporate-orange/10 text-corporate-orange font-medium px-4 py-1.5 rounded-full text-sm mb-4">
-            Contato
-          </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-6">
-            Entre em contato conosco
-          </h2>
-          <p className="text-neutral-600 text-lg">
-            Estamos prontos para atender às suas necessidades através dos nossos canais de atendimento.
-          </p>
-        </div>
-        
-        {/* Contact Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          {/* WhatsApp Card */}
-          <div className="bg-white rounded-xl shadow-sm overflow-hidden animate-fade-in">
-            <div className="bg-emerald-500 p-6 flex items-center justify-center">
-              <img 
-                src="/lovable-uploads/9af51757-dec9-4ec7-988c-f79d58e34b1f.png" 
-                alt="WhatsApp" 
-                className="w-16 h-16"
-              />
-            </div>
-            <div className="p-6 text-center">
-              <h3 className="text-lg font-semibold text-neutral-900 mb-2">WhatsApp</h3>
-              <p className="text-neutral-600 mb-4">Atendimento rápido e prático</p>
-              <a 
-                href="https://api.whatsapp.com/message/DI5FPL57C545D1?autoload=1&app_absent=0" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-corporate-blue hover:bg-corporate-darkBlue text-white px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium"
-              >
-                <span>Enviar mensagem</span>
-              </a>
-            </div>
-          </div>
-          
-          {/* Phone Card */}
-          <div className="bg-white rounded-xl shadow-sm overflow-hidden animate-fade-in" style={{ animationDelay: '0.1s' }}>
-            <div className="bg-corporate-orange p-6 flex items-center justify-center">
-              <Phone className="w-16 h-16 text-white" />
-            </div>
-            <div className="p-6 text-center">
-              <h3 className="text-lg font-semibold text-neutral-900 mb-2">Telefone</h3>
-              <p className="text-neutral-600 mb-4">Fale diretamente conosco</p>
-              <a 
-                href="tel:+5594991784456"
-                className="bg-corporate-blue hover:bg-corporate-darkBlue text-white px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium"
-              >
-                <span>(94) 99178-4456</span>
-              </a>
-            </div>
-          </div>
-          
-          {/* Email Card */}
-          <div className="bg-white rounded-xl shadow-sm overflow-hidden animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            <div className="bg-corporate-blue p-6 flex items-center justify-center">
-              <Mail className="w-16 h-16 text-white" />
-            </div>
-            <div className="p-6 text-center">
-              <h3 className="text-lg font-semibold text-neutral-900 mb-2">E-mail</h3>
-              <p className="text-neutral-600 mb-4">Envie sua mensagem</p>
-              <a 
-                href="mailto:gerliandro55@gmail.com"
-                className="bg-corporate-blue hover:bg-corporate-darkBlue text-white px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium"
-              >
-                <span>gerliandro55@gmail.com</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        
-        {/* Address and Hours Card */}
-        <div className="mt-12 bg-white rounded-xl shadow-sm p-8 max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Address */}
-            <div className="flex items-start">
-              <div className="bg-neutral-100 p-3 rounded-full mr-4 flex-shrink-0">
-                <MapPin className="text-corporate-blue" size={24} />
+    <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-organiza-dark">
+      <div className="container px-4 md:px-6">
+        <div className="grid gap-10 lg:grid-cols-2 items-center">
+          <div className="space-y-4">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-organiza-light">
+              Entre em Contato
+            </h2>
+            <p className="text-organiza-light/80 md:text-xl">
+              Estamos prontos para ajudar sua empresa a alcançar os melhores resultados financeiros
+            </p>
+            <div className="space-y-2">
+              <div className="flex items-center space-x-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-5 w-5 text-organiza-light"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                  <path d="M2 12h20" />
+                </svg>
+                <div>
+                  <p className="text-organiza-light/80">Avenida Brasiliano Bras 778, Centro</p>
+                  <p className="text-organiza-light/80">São Francisco - MG</p>
+                </div>
               </div>
-              <div>
-                <h4 className="text-lg font-semibold text-neutral-900 mb-2">Endereço</h4>
-                <p className="text-neutral-600">Rua 01, 67, Centro, CEP: 68530-000, Rio Maria, Pará</p>
+              <div className="flex items-center space-x-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-5 w-5 text-organiza-light"
+                >
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                <a href="tel:+5538984115540" className="text-organiza-light hover:text-organiza-highlight">
+                  (38) 98411-5540
+                </a>
+              </div>
+              <div className="flex items-center space-x-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-5 w-5 text-organiza-light"
+                >
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                <a href="mailto:diego.palestras@gmail.com" className="text-organiza-light hover:text-organiza-highlight">
+                  diego.palestras@gmail.com
+                </a>
+              </div>
+              <div className="flex items-center space-x-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-5 w-5 text-organiza-light"
+                >
+                  <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+                  <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+                </svg>
+                <p className="font-semibold text-organiza-light">Siga-nos nas redes sociais</p>
+              </div>
+              <div className="flex space-x-2">
+                <a
+                  href="https://instagram.com/diegomessiasconsultor"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-10 w-10 items-center justify-center rounded-full bg-organiza-accent text-organiza-light hover:bg-organiza-highlight"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                  </svg>
+                </a>
+                <a
+                  href="https://api.whatsapp.com/send?phone=5538984115540"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-10 w-10 items-center justify-center rounded-full bg-organiza-accent text-organiza-light hover:bg-organiza-highlight"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                  </svg>
+                </a>
               </div>
             </div>
-            
-            {/* Working Hours */}
-            <div>
-              <h4 className="text-lg font-semibold text-neutral-900 mb-4">Horário de Atendimento</h4>
-              
+          </div>
+          <div className="rounded-lg border border-organiza-highlight bg-organiza-accent p-8">
+            <form className="space-y-4">
               <div className="space-y-2">
-                <div className="flex justify-between">
-                  <span className="text-neutral-600">Segunda - Sexta:</span>
-                  <span className="font-medium text-neutral-900">08:00 - 18:00</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-neutral-600">Sábado:</span>
-                  <span className="font-medium text-neutral-900">09:00 - 13:00</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-neutral-600">Domingo:</span>
-                  <span className="font-medium text-neutral-900">Fechado</span>
-                </div>
+                <label htmlFor="name" className="text-sm font-medium leading-none text-organiza-light">
+                  Nome
+                </label>
+                <input
+                  id="name"
+                  className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                  placeholder="Digite seu nome"
+                />
               </div>
-            </div>
-          </div>
-        </div>
-        
-        {/* Map Section */}
-        <div className="mt-12">
-          <div className="bg-white rounded-xl shadow-sm overflow-hidden">
-            <div className="h-[400px]">
-              <Map />
-            </div>
+              <div className="space-y-2">
+                <label htmlFor="email" className="text-sm font-medium leading-none text-organiza-light">
+                  E-mail
+                </label>
+                <input
+                  id="email"
+                  type="email"
+                  className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                  placeholder="Digite seu e-mail"
+                />
+              </div>
+              <div className="space-y-2">
+                <label htmlFor="message" className="text-sm font-medium leading-none text-organiza-light">
+                  Mensagem
+                </label>
+                <textarea
+                  id="message"
+                  className="flex min-h-[120px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                  placeholder="Digite sua mensagem"
+                />
+              </div>
+              <Button className="w-full bg-organiza-dark hover:bg-organiza-highlight">Enviar Mensagem</Button>
+            </form>
           </div>
         </div>
       </div>

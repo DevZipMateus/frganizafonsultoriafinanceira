@@ -1,80 +1,22 @@
 
-import React, { useState, useEffect } from 'react';
-import { MessageCircle, Phone, Mail, X } from 'lucide-react';
-import { useIsMobile } from '../hooks/use-mobile';
+import React from 'react';
+import { Button } from './ui/button';
 
 const FloatingButton = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isPulsing, setIsPulsing] = useState(true);
-  const isMobile = useIsMobile();
-  
-  // Start pulsing effect every 5 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIsPulsing(true);
-      setTimeout(() => setIsPulsing(false), 2000);
-    }, 10000);
-    
-    return () => clearInterval(interval);
-  }, []);
-  
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-    setIsPulsing(false); // Stop pulsing when opened
-  };
-  
   return (
-    <div className={`fixed ${isMobile ? 'bottom-4 right-3' : 'bottom-8 right-8'} z-50`}>
-      {/* Contact Options */}
-      <div className={`flex flex-col-reverse items-end mb-3 space-y-reverse space-y-2 transition-all duration-500 ${isOpen ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}>
-        <a 
-          href="https://api.whatsapp.com/message/DI5FPL57C545D1?autoload=1&app_absent=0" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="flex items-center bg-corporate-blue text-white px-4 py-2 rounded-md shadow-lg hover:bg-corporate-darkBlue transition-all duration-300 gap-2 font-medium"
-        >
-          <span className="mr-1">WhatsApp</span>
-        </a>
-        
-        <a 
-          href="tel:+5594991784456" 
-          className="flex items-center bg-corporate-blue text-white px-4 py-2 rounded-md shadow-lg hover:bg-corporate-darkBlue transition-all duration-300 gap-2 font-medium"
-        >
-          <span className="mr-1">Ligar</span>
-        </a>
-        
-        <a 
-          href="mailto:gerliandro55@gmail.com" 
-          className="flex items-center bg-corporate-blue text-white px-4 py-2 rounded-md shadow-lg hover:bg-corporate-darkBlue transition-all duration-300 gap-2 font-medium"
-        >
-          <span className="mr-1">E-mail</span>
-        </a>
-      </div>
-      
-      {/* Main Button */}
-      <button
-        onClick={toggleMenu}
-        className={`${isMobile ? 'p-3' : 'p-4'} rounded-full flex items-center justify-center transition-all duration-300 
-          ${isOpen ? 'bg-red-500 hover:bg-red-600' : 'bg-[#0dc043] hover:bg-[#0ab13b]'} 
-          ${isOpen ? 'text-white' : 'text-white'} 
-          ${isPulsing && !isOpen ? 'animate-pulse' : ''}
-          transform hover:scale-105 active:scale-95 shadow-lg`}
-        aria-label={isOpen ? "Fechar menu de contato" : "Abrir menu de contato"}
-        style={{
-          boxShadow: isOpen 
-            ? '0 4px 12px rgba(239, 68, 68, 0.4)' 
-            : '0 4px 12px rgba(13, 192, 67, 0.4)'
-        }}
-      >
-        {isOpen ? (
-          <X size={isMobile ? 18 : 22} />
-        ) : (
-          <div className={`${isMobile ? 'w-6 h-6' : 'w-7 h-7'}`}>
-            <img src="/lovable-uploads/9af51757-dec9-4ec7-988c-f79d58e34b1f.png" alt="WhatsApp" className="w-full h-full object-contain" />
-          </div>
-        )}
-      </button>
-    </div>
+    <a 
+      href="https://api.whatsapp.com/send?phone=5538984115540"
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="fixed bottom-6 right-6 z-50"
+    >
+      <Button className="w-12 h-12 rounded-full bg-green-500 hover:bg-green-600 flex items-center justify-center shadow-lg">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+        </svg>
+      </Button>
+    </a>
   );
 };
 
