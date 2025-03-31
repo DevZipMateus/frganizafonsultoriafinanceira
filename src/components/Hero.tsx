@@ -1,5 +1,7 @@
+
 import React from 'react';
 import { Button } from './ui/button';
+
 const Hero = () => {
   return <section className="relative w-full py-10 md:py-16 lg:py-20 bg-organiza-dark text-organiza-white overflow-hidden">
       {/* Logo background - no opacity filter */}
@@ -14,17 +16,18 @@ const Hero = () => {
             Seu financeiro organizado faz a diferença.
           </p>
         </div>
-        
-        {/* Center the buttons at the bottom */}
-        <div className="flex justify-center space-x-4 mt-8 py-0 my-0">
-          <Button className="bg-organiza-accent hover:bg-organiza-highlight">
-            <a href="#contact">Entre em Contato</a>
-          </Button>
-          <Button variant="outline" className="border-organiza-accent text-organiza-white hover:bg-organiza-accent">
-            <a href="#services">Nossos Serviços</a>
-          </Button>
-        </div>
+      </div>
+      
+      {/* Moved the buttons div outside and below the container */}
+      <div className="flex justify-center space-x-4 mt-8 py-0 my-0 relative z-10">
+        <Button className="bg-organiza-accent hover:bg-organiza-highlight">
+          <a href="#contact">Entre em Contato</a>
+        </Button>
+        <Button variant="outline" className="border-organiza-accent text-organiza-white hover:bg-organiza-accent">
+          <a href="#services">Nossos Serviços</a>
+        </Button>
       </div>
     </section>;
 };
+
 export default Hero;
