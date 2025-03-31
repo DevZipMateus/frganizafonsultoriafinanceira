@@ -1,17 +1,10 @@
-
 import React from 'react';
 import { Button } from './ui/button';
-
 const Hero = () => {
-  return (
-    <section className="relative w-full py-10 md:py-16 lg:py-20 bg-organiza-dark text-organiza-white overflow-hidden">
+  return <section className="relative w-full py-10 md:py-16 lg:py-20 bg-organiza-dark text-organiza-white overflow-hidden">
       {/* Logo background - no opacity filter */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <img 
-          src="/lovable-uploads/afd70b2b-77ad-4645-b491-61a8aa1a00dd.png" 
-          alt="Organiza Logo Background" 
-          className="w-full max-w-3xl object-contain" 
-        />
+        <img src="/lovable-uploads/afd70b2b-77ad-4645-b491-61a8aa1a00dd.png" alt="Organiza Logo Background" className="w-full max-w-3xl object-contain" />
       </div>
       
       <div className="container px-4 md:px-6 relative z-10">
@@ -23,7 +16,7 @@ const Hero = () => {
         </div>
         
         {/* Center the buttons at the bottom */}
-        <div className="flex justify-center space-x-4 mt-8">
+        <div className="flex justify-center space-x-4 mt-8 py-0 my-0">
           <Button className="bg-organiza-accent hover:bg-organiza-highlight">
             <a href="#contact">Entre em Contato</a>
           </Button>
@@ -32,8 +25,6 @@ const Hero = () => {
           </Button>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
