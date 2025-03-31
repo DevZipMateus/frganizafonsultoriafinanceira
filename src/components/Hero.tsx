@@ -4,15 +4,18 @@ import { Button } from './ui/button';
 
 const Hero = () => {
   return <section className="relative w-full py-10 md:py-16 lg:py-20 bg-organiza-dark text-organiza-white overflow-hidden">
-      {/* Logo background - no opacity filter */}
+      {/* Logo background */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <img src="/lovable-uploads/afd70b2b-77ad-4645-b491-61a8aa1a00dd.png" alt="Organiza Logo Background" className="w-full max-w-3xl object-contain" />
       </div>
       
       <div className="container px-4 md:px-6 relative z-10">
-        {/* Company slogan positioned at the top */}
-        <div className="flex flex-col items-center text-center mb-16 py-0 my-[34px]">
-          <p className="text-xl text-white font-semibold md:text-2xl mt-4 py-0">
+        {/* Empty container for spacing */}
+        <div className="py-24 md:py-28 lg:py-32"></div>
+        
+        {/* Company slogan repositioned to the middle area */}
+        <div className="flex flex-col items-center text-center mb-16">
+          <p className="text-xl text-white font-semibold md:text-2xl py-0">
             Seu financeiro organizado faz a diferença.
           </p>
         </div>
