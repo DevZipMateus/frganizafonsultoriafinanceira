@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent } from './ui/card';
 import { LinkedinIcon } from 'lucide-react';
@@ -33,6 +34,14 @@ const Team = () => {
                     Ajuda empresários a alcançarem maior lucratividade e controle financeiro 
                     através de estratégias personalizadas.
                   </p>
+                  
+                  <div className="mt-4 pt-4 border-t border-organiza-light/20">
+                    <p className="text-organiza-light/90 text-lg leading-relaxed">
+                      <span className="font-semibold text-organiza-highlight">Formação:</span> Bacharel em Administração, 
+                      Bacharel em Contabilidade, Pós-graduado em Contabilidade, Perícia e Auditoria, 
+                      MBA em Gestão Financeira e Controladoria.
+                    </p>
+                  </div>
                 </div>
                 
                 <div className="flex justify-center md:justify-start space-x-4 pt-2">
