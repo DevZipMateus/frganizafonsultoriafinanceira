@@ -2,8 +2,8 @@
 import React from 'react';
 
 const EgestorERP = () => {
-  // Link for both the title and button
-  const egestorLink = "https://www.egestor.com.br/afl/9904";
+  // Updated link for both the title and button
+  const egestorLink = "https://www.egestor.com.br/afl/9803";
 
   return (
     <section className="py-10 md:py-16 lg:py-20 bg-white overflow-hidden">
