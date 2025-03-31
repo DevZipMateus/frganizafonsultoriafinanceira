@@ -13,12 +13,12 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white border-b border-organiza-accent shadow-sm">
+    <header className="sticky top-0 z-50 w-full bg-organiza-white border-b border-organiza-accent shadow-sm">
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <div className="flex items-center gap-2">
           <Link to="/" className="flex items-center gap-2">
             <img 
-              src="/lovable-uploads/1142df65-6349-41d5-b8da-a2fa7a3feea3.png" 
+              src="/lovable-uploads/3c5af339-5358-4bf8-878d-4f0319b1d180.png" 
               alt="Organiza Consultoria Financeira" 
               className="h-12" 
             />
@@ -85,7 +85,7 @@ const Header = () => {
           </Button>
         </div>
         {isMobile && isMenuOpen && (
-          <div className="absolute top-16 left-0 right-0 bg-white border-b border-organiza-accent">
+          <div className="absolute top-16 left-0 right-0 bg-organiza-white border-b border-organiza-accent">
             <nav className="flex flex-col space-y-4 p-4">
               <Link
                 to="/"

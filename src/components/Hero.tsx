@@ -4,7 +4,7 @@ import { Button } from './ui/button';
 
 const Hero = () => {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-organiza-dark text-organiza-light">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-organiza-dark text-organiza-white">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center gap-4 text-center">
           <div className="space-y-2">
@@ -19,7 +19,7 @@ const Hero = () => {
             <Button className="bg-organiza-accent hover:bg-organiza-highlight">
               <a href="#contact">Entre em Contato</a>
             </Button>
-            <Button variant="outline" className="border-organiza-accent text-organiza-light hover:bg-organiza-accent">
+            <Button variant="outline" className="border-organiza-accent text-organiza-white hover:bg-organiza-accent">
               <a href="#services">Nossos Serviços</a>
             </Button>
           </div>

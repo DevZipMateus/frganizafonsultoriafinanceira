@@ -1,5 +1,6 @@
 
 import React from 'react';
+import Header from '../components/Layout/Header';
 import Hero from '../components/Hero';
 import AboutUs from '../components/AboutUs';
 import Services from '../components/Services';
@@ -10,7 +11,8 @@ import EgestorERP from '../components/EgestorERP';
 
 const Index = () => {
   return (
-    <div className="flex flex-col min-h-screen bg-white">
+    <div className="flex flex-col min-h-screen bg-organiza-white">
+      <Header />
       <Hero />
       <AboutUs />
       <Services />

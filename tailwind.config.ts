@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -20,11 +19,11 @@ export default {
     },
     extend: {
       colors: {
-        "organiza-dark": "#101a23",      // Maintaining the dark color for text
-        "organiza-accent": "#1c3046",    // Maintaining accent color
-        "organiza-highlight": "#2d4a67", // Maintaining highlight color
-        "organiza-light": "#e4e6e8",     // Maintaining light color
-        "organiza-white": "#ffffff",     // Adding white color for backgrounds
+        "organiza-dark": "#101a23",      // Dark color (30%)
+        "organiza-accent": "#1c3046",    // Accent color (part of 10%)
+        "organiza-highlight": "#2d4a67", // Highlight color (part of 10%)
+        "organiza-light": "#e4e6e8",     // Light gray
+        "organiza-white": "#ffffff",     // White color (60%)
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
