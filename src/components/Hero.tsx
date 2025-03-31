@@ -5,8 +5,8 @@ import { Button } from './ui/button';
 const Hero = () => {
   return (
     <section className="relative w-full py-10 md:py-16 lg:py-20 bg-organiza-dark text-organiza-white overflow-hidden">
-      {/* Logo background - increased opacity */}
-      <div className="absolute inset-0 flex items-center justify-center opacity-30 pointer-events-none">
+      {/* Logo background - full opacity */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <img 
           src="/lovable-uploads/afd70b2b-77ad-4645-b491-61a8aa1a00dd.png" 
           alt="Organiza Logo Background" 
@@ -15,7 +15,7 @@ const Hero = () => {
       </div>
       
       <div className="container px-4 md:px-6 relative z-10">
-        <div className="flex flex-col items-start text-left max-w-lg">
+        <div className="flex flex-col items-start text-left max-w-md ml-0 mr-auto">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
             Organiza Consultoria Financeira
           </h1>
