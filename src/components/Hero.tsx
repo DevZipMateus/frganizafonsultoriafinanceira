@@ -10,9 +10,9 @@ const Hero = () => {
       </div>
       
       <div className="container px-4 md:px-6 relative z-10">
-        {/* Position text at the top */}
+        {/* Company slogan positioned at the top */}
         <div className="flex flex-col items-center text-center mb-16">
-          <p className="text-xl text-organiza-light md:text-2xl mt-4">
+          <p className="text-xl text-white font-semibold md:text-2xl mt-4">
             Seu financeiro organizado faz a diferença.
           </p>
         </div>
