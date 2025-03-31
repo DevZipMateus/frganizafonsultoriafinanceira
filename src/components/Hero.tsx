@@ -8,7 +8,7 @@ const Hero = () => {
       {/* Logo background */}
       <div className="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none">
         <img 
-          src="/lovable-uploads/00b6d73e-0139-4a17-ad97-b66dac2be5f8.png" 
+          src="/lovable-uploads/afd70b2b-77ad-4645-b491-61a8aa1a00dd.png" 
           alt="Organiza Logo Background" 
           className="w-full max-w-3xl object-contain"
         />
