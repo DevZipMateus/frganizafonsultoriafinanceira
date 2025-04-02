@@ -19,7 +19,7 @@ const Hero = () => {
       </div>
       
       {/* Position buttons at the bottom of the section, outside the image area */}
-      <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-4 z-10">
+      <div className="absolute bottom-2 left-0 right-0 flex justify-center space-x-4 z-10">
         <Button className="bg-organiza-accent hover:bg-organiza-highlight">
           <a href="#contact">Entre em Contato</a>
         </Button>
