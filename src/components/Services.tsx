@@ -1,7 +1,9 @@
-
 import React from 'react';
+import { Button } from './ui/button';
 
 const Services = () => {
+  const egestorLink = "https://www.egestor.com.br/afl/9803";
+
   return (
     <section id="services" className="w-full py-10 md:py-16 lg:py-20 bg-organiza-dark">
       <div className="container px-4 md:px-6">
@@ -63,6 +65,14 @@ const Services = () => {
               e relatórios completos para tomada de decisões.
             </p>
           </div>
+        </div>
+        
+        <div className="flex justify-center mt-8">
+          <a href={egestorLink} target="_blank" rel="noopener noreferrer" className="w-full max-w-xs">
+            <Button className="w-full bg-[#7CFFA0] hover:bg-[#6DF090] text-black font-medium rounded-full transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-[1.02]">
+              Teste grátis
+            </Button>
+          </a>
         </div>
       </div>
     </section>
