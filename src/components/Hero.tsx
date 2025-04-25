@@ -1,6 +1,10 @@
+
 import React from 'react';
 import { Button } from './ui/button';
+
 const Hero = () => {
+  const egestorLink = "https://www.egestor.com.br/afl/9803";
+  
   return <section className="relative w-full py-10 md:py-16 lg:py-20 bg-organiza-dark text-organiza-white overflow-hidden">
       {/* Logo background */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
@@ -11,11 +15,14 @@ const Hero = () => {
         {/* Empty container for spacing */}
         <div className="py-12 md:py-16 lg:py-20"></div>
         
-        {/* Company slogan positioned in the middle area */}
-        
-        
-        {/* Additional spacing */}
-        
+        {/* Add Teste Grátis button in hero section */}
+        <div className="flex flex-col items-center gap-6 mb-12">
+          <a href={egestorLink} target="_blank" rel="noopener noreferrer" className="w-full max-w-xs">
+            <Button className="w-full bg-[#7CFFA0] hover:bg-[#6DF090] text-black font-medium rounded-full transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-[1.02]">
+              Teste grátis
+            </Button>
+          </a>
+        </div>
       </div>
       
       {/* Position buttons at the bottom of the section, outside the image area */}
@@ -29,4 +36,5 @@ const Hero = () => {
       </div>
     </section>;
 };
+
 export default Hero;
