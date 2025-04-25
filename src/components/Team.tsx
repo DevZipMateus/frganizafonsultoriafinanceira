@@ -1,8 +1,11 @@
-
 import React from 'react';
 import { Card, CardContent } from './ui/card';
-import { LinkedinIcon } from 'lucide-react';
+import { Button } from './ui/button';
+
 const Team = () => {
+  // Updated link for Egestor ERP
+  const egestorLink = "https://www.egestor.com.br/afl/9803";
+
   return <section id="team" className="w-full py-12 md:py-20 lg:py-24 bg-organiza-accent">
       <div className="container px-4 md:px-6 max-w-5xl mx-auto">
         <div className="text-center mb-10">
@@ -44,15 +47,22 @@ const Team = () => {
                   </div>
                 </div>
                 
-                <div className="flex justify-center md:justify-start space-x-4 pt-2">
-                  <a href="https://instagram.com/diegomessiasconsultor" target="_blank" rel="noopener noreferrer" className="text-organiza-light hover:text-organiza-highlight transition-colors p-2 bg-organiza-dark/20 rounded-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-                    </svg>
-                  </a>
+                <div className="flex flex-col items-center md:items-start space-y-4">
+                  <div className="flex justify-center md:justify-start space-x-4 pt-2">
+                    <a href="https://instagram.com/diegomessiasconsultor" target="_blank" rel="noopener noreferrer" className="text-organiza-light hover:text-organiza-highlight transition-colors p-2 bg-organiza-dark/20 rounded-full">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                      </svg>
+                    </a>
+                  </div>
                   
+                  <a href={egestorLink} target="_blank" rel="noopener noreferrer" className="w-full max-w-xs">
+                    <Button className="w-full bg-[#7CFFA0] hover:bg-[#6DF090] text-black font-medium rounded-full transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-[1.02]">
+                      Teste grátis
+                    </Button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -61,4 +71,5 @@ const Team = () => {
       </div>
     </section>;
 };
+
 export default Team;
